@@ -20,7 +20,7 @@ for i in range(len(letters)):
 
 game_end = False
 while not game_end:
-    guess = input(f"Choose a letter for\n{word}\n")
+    guess = input(f"Choose a letter for\n{word}\n").lower()
     if guess in chosen_word:
         for letter in range(len(chosen_word)):
             if guess == chosen_word[letter]:

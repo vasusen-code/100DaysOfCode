@@ -24,8 +24,6 @@ def pick_cards(n):
         chosen_cards.append(card) 
     return chosen_cards
 
-# handling betting amount
-
 game_end = False
 
 def place_bet(remaining_amount, bet):

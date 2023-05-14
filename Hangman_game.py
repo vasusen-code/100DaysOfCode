@@ -6,7 +6,7 @@ lives = ["❤️", "❤️", "❤️", "❤️", "❤️"]
 word_list = ["apple", "baloon", "camel", "donkey", "elephant", "furious", "goose", "hacker", "indigo", 
             "joker", "knot", "lioness", "master", "nephew", "ox", "penis", # hehe boi 
             "quartz", "rabbit", "sunny", "towel", "umbrella", "vagina", # hehe again
-             "wash", "xenon", "yolk", "zebra"]
+            "wash", "xenon", "yolk", "zebra"]
 
 chosen_word = random.choice(word_list)
  

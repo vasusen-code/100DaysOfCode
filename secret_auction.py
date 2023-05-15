@@ -7,7 +7,7 @@ def check_winer(bids_):
     winner = ""
     for bid in bids_:
         if bids[bid] > highest_bid:
-            highest_bid = bids[bid]
+            highest_bid = bids_[bid]
             winner = bid
     return winner, highest_bid
 

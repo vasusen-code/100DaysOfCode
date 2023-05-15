@@ -2,10 +2,10 @@
 
 bids = {}
 
-def check_winer():
+def check_winer(bids_):
     highest_bid = 0
     winner = ""
-    for bid in bids:
+    for bid in bids_:
         if bids[bid] > highest_bid:
             highest_bid = bids[bid]
             winner = bid
@@ -26,7 +26,7 @@ while not bidding_finished:
         bidding_finished = True
     else:
         print("Incorrect entry! Finding the winner among the bidders.")
-        winner, highest_bid = check_winer()
+        winner, highest_bid = check_winer(bids)
         print(f"{winner} wins this bidding contest by an bidding amount of $ {highest_bid}")
         bidding_finished = True
 

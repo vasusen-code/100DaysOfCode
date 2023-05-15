@@ -33,6 +33,7 @@ def pick_cards(n):
 
 game_end = False
 
+# placing the bet of player
 def place_bet():
     global remaining_amount, bet
     try:
@@ -118,6 +119,7 @@ def move():
 
     return remaining_amount
     
+# looping the game
 while not game_end:
     bet = place_bet()
     cards_ = pick_cards(4)
@@ -130,5 +132,5 @@ while not game_end:
         remaining_amount = 1000
         game_end = True
 
-        
+# the end
 print("You have lost all the money, restart the game.")
